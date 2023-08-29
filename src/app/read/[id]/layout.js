@@ -10,8 +10,9 @@ export default function Layout(props) {
     return(
         <>
           {props.children}
-          <h3>paramters : {props.params.id}</h3> 
+          <h3>paramters : {props.params.id }</h3> 
           <h3>{msg}</h3> 
+          <h3>paramters : {props.params.id === '1' ? "HTML선택" : props.params.id === '2'? "CSS선택" : "JS선택" }</h3> 
         </>
     );
 }
